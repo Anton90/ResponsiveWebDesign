@@ -40,17 +40,20 @@ div#small, div#medium  {
 
 #small {
   font-size: 16px;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #medium {
   font-size: 20px;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #large {
   font-size: 24px;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 div {
@@ -61,7 +64,7 @@ div {
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 300px) {
   /* For tablets: */
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
@@ -76,6 +79,7 @@ div {
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
 }
+
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}
